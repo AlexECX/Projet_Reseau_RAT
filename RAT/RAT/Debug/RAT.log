@@ -1,0 +1,5 @@
+﻿  RATzombie.cpp
+c:\users\p2-1020\desktop\rat\rat\ratzombie.cpp(83): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\p2-1020\desktop\rat\rat\ratzombie.cpp(89): warning C4018: '<' : incompatibilité signed/unsigned
+  RAT.vcxproj -> C:\Users\P2-1020\Desktop\RAT\Debug\RAT.exe
+  RAT.vcxproj -> C:\Users\P2-1020\Desktop\RAT\Debug\RAT.pdb (Partial PDB)

@@ -1,0 +1,71 @@
+﻿cmake_minimum_required(VERSION 3.0.0)
+# Project's name
+project(RAT VERSION 0.0.0)
+
+include(CTest)
+enable_testing()
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
+
+include(CmakeToolsHelpers)
+
+
+
+# Set the output folder where your program will be created
+##${SOMETHING} => The complete PATH of SOMETHING
+##CMAKE_SOURCE_DIR == directory from which cmake was started
+
+##Adds multi-processor compilation. 
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MT")
+
+#set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/_builds) ##BINARY_DIR is now /bin
+#set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/Debug) ##OUTPUT_PATH is now /bin/exec
+#set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/mylibs) ##Wh?re the libraries will be
+
+# The following folder will be included to all following instructions?
+#include_directories("${PROJECT_SOURCE_DIR}/RAT" "${PROJECT_SOURCE_DIR}/Connection")
+
+##${PROJECT_SOURCE_DIR} => full PATH to my project directoryl
+
+file(GLOB SOURCES "*.cpp" "Connection/*.cpp")
+
+find_library(LIB wsock32)
+
+add_executable(RAT ${SOURCES})
+
+target_include_directories(RAT PUBLIC "${PROJECT_SOURCE_DIR}" "${PROJECT_SOURCE_DIR}/Connection")
+target_link_libraries(RAT wsock32)
+
+
+# to build
+#$ cmake . -B(buildFolderName) -G "Unix Makefiles" ##This last one selects the generator
+#$ cmake --build (buildFolderName) #following are optionnal# -- -j(numberofcores)
+### to build exemples
+#NOTE: cmake . -B only need to be run once, just use cmake --build after
+#cmake . -B_builds/Debug -DCMAKE_BUILD_TYPE=Debug #create a directory for a Débug build
+#cmake . -B_builds/Release -DCMAKE_BUILD_TYPE=Release
+
+#NOTES: 
+#Make tool knows that if there are no changes in foo.cpp then no need to build and link #executable. If you run build again there will be no compile and link stage:
+
+
+##Variables
+#set(MyVar "VarContent")
+#set(MyVar CACHE ...) #Will store the var in CMakeCache
+#${MyVar}	#Access content of MyVar
+#"${MyVar}"	#Interpret content as a string
+#set(Var a;b;c)	#Create list of 3 elèments
+
+##Special Variables
+#CMAKE_SOURCE_DIR	#Top level dir, -H starts thère.
+#CMAKE_BINARY_DIR	#-B starts thère
+#CMAKE_LIST_DIR
+#see also CMAKE_CURENT_..._...
+#PROJECT_SOURCE_DIR	#?
+
+
+#Decision structure
+#if() else() endif()
+#foreach(FOO_FILES_ITERATOR ${var})

@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "RAT"
+		},
+		{
+			"path": "D:\\Env\\VSCode-win32-x64-1.21.1\\C++Utilities"
+		},
+		{
+			"path": "BuildC++"
+		}
+	],
+	"settings": {
+		"cmake.sourceDirectory": "D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/RAT",
+		"cmake.buildDirectory": "D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build",
+		"files.associations": {
+			"exception": "cpp",
+			"functional": "cpp",
+			"memory": "cpp",
+			"xlocale": "cpp"
+		},
+		
+		//"cmake.sourceDirectory": "C:/Users/alex1/OneDrive/Documents/Visual Studio Code/workspaces/C++",
+		
+	}
+}

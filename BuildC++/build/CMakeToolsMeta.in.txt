@@ -1,0 +1,3 @@
+executable;Distributor;$<TARGET_FILE:Distributor>
+system;Windows;AMD64;MSVC
+executable;RATremote;$<TARGET_FILE:RATremote>

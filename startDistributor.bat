@@ -1,0 +1,1 @@
+"%~dp0BuildC++\build\Debug\Distributor.exe" 2020

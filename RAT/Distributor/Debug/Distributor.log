@@ -1,0 +1,4 @@
+﻿  Connection.cpp
+c:\users\p2-1020\desktop\rat\connection\connection.cpp(104): warning C4101: 'remoteHost' : variable locale non référencée
+  Distributor.vcxproj -> C:\Users\P2-1020\Desktop\RAT\Debug\Distributor.exe
+  Distributor.vcxproj -> C:\Users\P2-1020\Desktop\RAT\Debug\Distributor.pdb (Partial PDB)

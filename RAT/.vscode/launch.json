@@ -1,0 +1,113 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) Current File Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true
+        },
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder:BuildC++}/build/Debug/RATremote.exe",
+            "args": [
+                "2010"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder:C++}",
+            "environment": [
+                //{"name": "PATH", "value": "%PATH%;${workspaceFolder:C++}/lib;${workspaceFolder:C++}/Image"},
+
+            ],
+            //"environment": [{"name": "$env:Path", "value": "$env:Path += ';${workspaceFolder:C++}/lib'"}],
+            "externalConsole": true,
+            "symbolSearchPath": "${workspaceFolder:C++};${workspaceFolder:C++}/lib;",
+            "logging": {
+                "exceptions": true,
+                "trace": true,
+                "programOutput": true
+            }
+        },
+        {
+            "name": "(gbd) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder:C++}/POO_Dev3.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder:C++}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode":"gdb",
+            "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gbd",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "(WSL) test",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "C:/Users/alex1/Downloads/a.out",
+            "args": ["wsl"],
+            "stopAtEntry": false,
+            "cwd": "C:/Users/alex1/Downloads",
+            "environment": [],
+            "externalConsole": true,
+            "sourceFileMap": {
+                "/mnt/c": "c:\\"
+            }
+        },
+        {
+            "name": "(WSL) Launch",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "/mnt/c/Users/alex1/Downloads/a.out",
+            "preLaunchTask": "testname",
+           // "args": [],
+           // "stopAtEntry": false,
+           // "cwd": "/mnt/c/Users/alex1/Downloads",
+           // "environment": [],
+            "processId": "${command:pickRemoteProcess}",
+            "windows": {
+                "externalConsole": "true",
+                "MIMode": "gdb",
+                "miDebuggerPath": "/usr/bin/gdb",
+                "setupCommands": [{
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }]
+            },
+            "sourceFileMap": {
+                "/mnt/c": "c:\\"
+            }
+        },
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/chap5/a.out",
+            "args": ["${workspaceRoot}/testcases/test4.tig"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        }
+    ]
+}
