@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 		cout << "\nSyntax: RAT ServerName PortNumber";
 		cout << endl;
 		return 0;
-}
+	}
 	nPort = atoi(argv[2]);
 	host = argv[1];
 
@@ -48,6 +48,7 @@ int main(int argc, char **argv)
 	WSACleanup();
 
 	return 0;
+}
 
 int RatServer(short nPort, char *szServer) {
 	char   psBuffer[256];

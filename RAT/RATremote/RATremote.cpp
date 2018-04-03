@@ -109,7 +109,7 @@ void StreamServer(short nPort)
 						if (UserInput[charindex] == '/') {
 							arguments.push_back('\\');
 						}
-						else if (UserInput[charindex] != '\"') {
+						else /*if (UserInput[charindex] != '\"')*/ {
 							arguments.push_back(UserInput[charindex]);
 						}
 						charindex++;

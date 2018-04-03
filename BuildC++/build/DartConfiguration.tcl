@@ -36,7 +36,7 @@ ScpCommand: SCPCOMMAND-NOTFOUND
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Users/P2-1020/Desktop/C++Utilities/cmake/bin/cmake.exe" "D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/RAT"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/RAT"
 MakeCommand: C:\Users\P2-1020\Desktop\C++Utilities\cmake\bin\cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
