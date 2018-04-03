@@ -1,5 +1,3 @@
 executable;RAT;$<TARGET_FILE:RAT>
 system;Windows;AMD64;MSVC
 executable;Injector;$<TARGET_FILE:Injector>
-executable;Distributor;$<TARGET_FILE:Distributor>
-executable;RATremote;$<TARGET_FILE:RATremote>

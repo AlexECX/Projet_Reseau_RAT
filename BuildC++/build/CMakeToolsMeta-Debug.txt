@@ -1,5 +1,3 @@
 executable;RAT;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/RAT.exe
 system;Windows;AMD64;MSVC
 executable;Injector;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/Injector.exe
-executable;Distributor;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/Distributor.exe
-executable;RATremote;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/RATremote.exe
