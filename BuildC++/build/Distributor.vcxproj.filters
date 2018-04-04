@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\RAT\Distributor\Distributer.cpp">
+    <ClCompile Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\RAT\Distributor\Distributer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\RAT\Connection\Connection.cpp">
+    <ClCompile Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\RAT\Connection\Connection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\RAT\Connection\Connection_error.cpp">
+    <ClCompile Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\RAT\Connection\Connection_error.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\RAT\cmakelists.txt" />
+    <CustomBuild Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\RAT\cmakelists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{F81E2A83-2AFC-3B64-831B-8321ABEDB93D}</UniqueIdentifier>
+      <UniqueIdentifier>{664BFD1D-8642-3F49-8EF7-1064C8AFF1A0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

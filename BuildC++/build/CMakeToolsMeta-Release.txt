@@ -1,3 +1,0 @@
-executable;Distributor;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Release/Distributor.exe
-system;Windows;AMD64;MSVC
-executable;RATremote;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Release/RATremote.exe

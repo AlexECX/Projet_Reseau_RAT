@@ -1,1 +1,1 @@
-"%~dp0BuildC++\build\Debug\RAT.exe" 127.0.0.1 2030
+"%~dp0BuildC++\build\Release\RAT.exe" 127.0.0.1 2030

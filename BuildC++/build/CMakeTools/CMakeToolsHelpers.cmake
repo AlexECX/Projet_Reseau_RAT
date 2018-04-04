@@ -58,7 +58,7 @@ if(NOT is_set_up)
         _cmt_generate_system_info()
     endmacro()
 
-    if(1)
+    if(0)
         set(condition CONDITION "$<CONFIG:Debug>")
     endif()
 

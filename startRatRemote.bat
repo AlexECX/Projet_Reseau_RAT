@@ -1,1 +1,1 @@
-"%~dp0BuildC++\build\Debug\RATremote.exe" 2030
+"%~dp0BuildC++\build\Release\RATremote.exe" 2030

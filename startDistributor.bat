@@ -1,1 +1,2 @@
-"%~dp0BuildC++\build\Debug\Distributor.exe" 2020
+set PATH=%~dp0\BuildC++\build\Release\;%PATH%
+"%~dp0BuildC++\build\Release\Distributor.exe" 2020
