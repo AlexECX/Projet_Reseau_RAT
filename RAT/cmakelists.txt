@@ -33,7 +33,7 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:
 ##${PROJECT_SOURCE_DIR} => full PATH to my project directoryl
 
 #set(EXE_NAMES "RAT" "Injector" "Distributor" "RATremote")
-set(EXE_NAMES "RAT" "Injector")
+set(EXE_NAMES "RAT" "Injector" "Malware")
 #set(EXE_NAMES "Distributor" "RATremote")
 
 set(LIB wsock32)
