@@ -7,9 +7,9 @@ project(Project_RAT VERSION 0.0.0)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-#include(CPack)
+include(CPack)
 
-#include(CmakeToolsHelpers)
+include(CmakeToolsHelpers)
 
 
 ##Adds multi-processor compilation. 
@@ -19,7 +19,7 @@ set(LIB wsock32)
 
 file(GLOB CONNECT "${PROJECT_SOURCE_DIR}/Connection/*.cpp")
 
-set(EXE_NAMES "Distributor" "RATremote")
+set(EXE_NAMES "RAT" "Distributor" "RATremote")
 
 foreach(entry ${EXE_NAMES})
     set(PROJECT_DIRECTORY "${PROJECT_SOURCE_DIR}/${entry}")
@@ -33,7 +33,7 @@ endforeach(entry ${EXE_NAMES})
 #set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
 
 
-set(EXE_NAMES "RAT" "Injector")
+set(EXE_NAMES "Injector")
 
 foreach(entry ${EXE_NAMES})
     set(PROJECT_DIRECTORY "${PROJECT_SOURCE_DIR}/${entry}")

@@ -1,1 +1,0 @@
-.\Debug\Injector.exe P2-4020-21 2020 RAT.exe

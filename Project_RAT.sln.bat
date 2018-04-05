@@ -1,0 +1,1 @@
+start "" "%~dp0BuildC++\build\Project_RAT.sln"

@@ -19,12 +19,12 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder:BuildC++}/build/Debug/RATremote.exe",
+            "program": "${workspaceFolder:BuildC++}/build/Debug/Distributor.exe",
             "args": [
-                "2010"
+                "2020"
             ],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder:C++}",
+            "cwd": "",
             "environment": [
                 //{"name": "PATH", "value": "%PATH%;${workspaceFolder:C++}/lib;${workspaceFolder:C++}/Image"},
 

