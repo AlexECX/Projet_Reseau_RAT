@@ -1,0 +1,5 @@
+executable;RAT;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/RelWithDebInfo/RAT.exe
+system;Windows;AMD64;MSVC
+executable;Distributor;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/RelWithDebInfo/Distributor.exe
+executable;RATremote;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/RelWithDebInfo/RATremote.exe
+executable;Injector;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/RelWithDebInfo/Injector.exe

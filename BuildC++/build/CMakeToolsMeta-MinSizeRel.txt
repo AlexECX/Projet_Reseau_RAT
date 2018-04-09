@@ -1,0 +1,5 @@
+executable;RAT;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/MinSizeRel/RAT.exe
+system;Windows;AMD64;MSVC
+executable;Distributor;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/MinSizeRel/Distributor.exe
+executable;RATremote;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/MinSizeRel/RATremote.exe
+executable;Injector;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/MinSizeRel/Injector.exe

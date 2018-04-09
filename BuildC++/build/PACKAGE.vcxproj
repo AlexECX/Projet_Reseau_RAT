@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6A35CB6C-3BC6-3BFE-BEA4-6BF0C0980E98}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{44ED158A-8414-34E9-BC05-734D84C6886A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>PACKAGE</ProjectName>
@@ -30,22 +30,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -73,11 +73,11 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build
+cd D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Users\alex1\OneDrive\Documents\Visual Studio Code\workspaces\C++Utilities\cmake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
+D:\Env\VSCode-win32-x64-1.21.1\C++Utilities\cmake\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -99,11 +99,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build
+cd D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Users\alex1\OneDrive\Documents\Visual Studio Code\workspaces\C++Utilities\cmake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
+D:\Env\VSCode-win32-x64-1.21.1\C++Utilities\cmake\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -125,11 +125,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build
+cd D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Users\alex1\OneDrive\Documents\Visual Studio Code\workspaces\C++Utilities\cmake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
+D:\Env\VSCode-win32-x64-1.21.1\C++Utilities\cmake\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,11 +151,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build
+cd D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build
 if %errorlevel% neq 0 goto :cmEnd
-C:
+D:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Users\alex1\OneDrive\Documents\Visual Studio Code\workspaces\C++Utilities\cmake\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake
+D:\Env\VSCode-win32-x64-1.21.1\C++Utilities\cmake\bin\cpack.exe -C $(Configuration) --config ./CPackConfig.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -166,7 +166,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\6727a114989ff4e5370297cdf84447bb\PACKAGE_force.rule">
+    <CustomBuild Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\7e04a5806fcffeba4e1c3aec3dd77a54\PACKAGE_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 cd .
@@ -177,8 +177,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/6727a114989ff4e5370297cdf84447bb/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/7e04a5806fcffeba4e1c3aec3dd77a54/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
@@ -190,8 +190,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/6727a114989ff4e5370297cdf84447bb/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/7e04a5806fcffeba4e1c3aec3dd77a54/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
@@ -203,8 +203,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/6727a114989ff4e5370297cdf84447bb/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/7e04a5806fcffeba4e1c3aec3dd77a54/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
@@ -216,18 +216,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/6727a114989ff4e5370297cdf84447bb/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/CMakeFiles/7e04a5806fcffeba4e1c3aec3dd77a54/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\ZERO_CHECK.vcxproj">
-      <Project>{CD58F551-D5D1-3878-B22A-AE076AAB0E7F}</Project>
+    <ProjectReference Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\ZERO_CHECK.vcxproj">
+      <Project>{9387A813-DAE7-3A37-A9D6-7B9456078A86}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\alex1\OneDrive\Documents\GitHub\Projet_Reseau_RAT\BuildC++\build\ALL_BUILD.vcxproj">
-      <Project>{42E8AFB4-4E6F-39B7-A1F4-F037E00BCC74}</Project>
+    <ProjectReference Include="D:\Env\GitHubDesktopPortable-master\Repos\Projet_Reseau_RAT\BuildC++\build\ALL_BUILD.vcxproj">
+      <Project>{60B96F36-BAC2-331B-B8FD-4DFCC1E584F7}</Project>
       <Name>ALL_BUILD</Name>
     </ProjectReference>
   </ItemGroup>

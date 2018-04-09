@@ -1,5 +1,5 @@
-executable;RAT;C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/Debug/RAT.exe
+executable;Distributor;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/Distributor.exe
 system;Windows;AMD64;MSVC
-executable;Distributor;C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/Debug/Distributor.exe
-executable;RATremote;C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/Debug/RATremote.exe
-executable;Injector;C:/Users/alex1/OneDrive/Documents/GitHub/Projet_Reseau_RAT/BuildC++/build/Debug/Injector.exe
+executable;RATremote;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/RATremote.exe
+executable;RAT;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/RAT.exe
+executable;Injector;D:/Env/GitHubDesktopPortable-master/Repos/Projet_Reseau_RAT/BuildC++/build/Debug/Injector.exe
